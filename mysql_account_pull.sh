@@ -10,7 +10,7 @@
 
 # you need to define a database_db.txt file with three columns separated by a space
 # where each column (all mandatory) is: server username password
-DB_CREDENTIALS="database_db.txt";
+DB_CREDENTIALS="database_db.txt.default";
 if ! [ -f $DB_CREDENTIALS ]; then 
 	echo "cant continue, the file with the servers and credentials is not there....exiting"
 	exit;
