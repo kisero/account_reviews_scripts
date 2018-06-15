@@ -71,8 +71,10 @@ if ($ldapbind) {
 	# this parses the response on a CSV format
 	foreach($info as $id) {
 	
+		# this is really not pretty but for now is all there is
 		$login=$id[strtolower($ldap_account_attribute)]['0'];
 		$ad_time=intval($id[strtolower($ldap_lastlogon_attribute)]['0']);
+		# end of the unpretty code
 
 		if ( !empty($login) ) {
 			if ($ad_time > 0) {
