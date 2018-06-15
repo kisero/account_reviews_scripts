@@ -1,1 +1,2 @@
-ldap_credentials/ldap_config.php
+credentials/ldap_config.php
+credentials/database_db.txt
