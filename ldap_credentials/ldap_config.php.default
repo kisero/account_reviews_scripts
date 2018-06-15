@@ -1,0 +1,15 @@
+<?php
+
+	# you need to setup this configs for your own 
+	# AD settings
+
+	$ldap_config['server']="ldap://ad.eramba.org";
+	$ldap_config['port']="389";
+	$ldap_config['username']="CN=Joe Ramone,OU=People,DC=corp,DC=eramba,DC=org";
+	$ldap_config['password']="";
+	$ldap_config['base_directory']="DC=corp,DC=eramba,DC=org";
+	$ldap_config['filter']="(&(objectCategory=user)(memberOf=CN=Test,OU=Groups,DC=corp,DC=eramba,DC=org))";
+	$ldap_config['account_attribute']="sAMAccountName";
+	$ldap_config['lastlogon_attribute']="lastLogon";
+
+?>
