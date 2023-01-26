@@ -1,3 +1,4 @@
 vendor/
+credentials.php
 *.sublime-workspace
 *.sublime-project
