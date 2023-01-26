@@ -7,13 +7,16 @@ use Aws\Iam\IamClient;
 use GuzzleHttp\Client;
 
 
+/*
+ * copy the file credentials.php.template
+ * to credentials.php and complete all fields before you run this script
+ *
+ 
+
 /* first we pull accounts and their roles from AWS 
  * into an array that we can then easily push into a
  * csv file */
 
-$region = "eu-west-1";
-$profile = "aws_log_parser";
-$tmp_csv_file_name = "tmp.csv";
 $fp = fopen($tmp_csv_file_name, 'w');
 
 $aws = IamClient::factory(array(
@@ -50,21 +53,7 @@ foreach($result['Users'] as $users) {
 fclose($fp);
 
 
-/* now we connect to eramba and push the CSV file
- * into the account review module 
- * you need to create a file called
- * credentials.php and inside copy paste the following
- *
- * $eramba_hostname = "";
- * $eramba_username = "";
- * $eramba_password = "";
- *
- * */
 
-$feed_id = "1";
-$feed_title = "AWS eramba account";
-$feed_description = "accounts used in AWS eramba";
-$feed_type = "1";
 
 $client = new GuzzleHttp\Client();
 
