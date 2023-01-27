@@ -22,7 +22,6 @@ $eramba_password = "2RoC!dbZ7jJHiAfvDQ";
 
 
 $aws_configs = array(
-
 	array(
 		'feed_id' => '',
 		'feed_title' => '',
@@ -32,9 +31,23 @@ $aws_configs = array(
 		'aws_profile' => '',
 		'aws_tmp_file' => ''
 	)
-
 );
 
+$ldap_configs = array(
+	array(
+		'feed_id' => '',
+		'feed_title' => '',
+		'feed_description' => '',
+		'feed_title' => '',
+		'ldap_server' => '',
+		'ldap_port' => '',
+		'ldap_usernam' => '',
+		'ldap_password' => '',
+		'aws_tmp_file' => ''
+		'ldap_query_user_lists' => ''
+		'ldap_query_user_lists_account_attribute' => ''
+	)
+);
 
 
 $region = "eu-west-1";

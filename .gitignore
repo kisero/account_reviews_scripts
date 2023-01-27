@@ -1,4 +1,5 @@
 vendor/
 credentials.php
+config.php
 *.sublime-workspace
 *.sublime-project

@@ -9,7 +9,7 @@ use GuzzleHttp\Client;
 
 /*
  * IMPORTANT
- * copy the file credentials.php.template
+ * copy the file config.php.template
  * to credentials.php and complete all fields before you run this script
  *
  
