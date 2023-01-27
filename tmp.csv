@@ -1,7 +1,0 @@
-awslog_cloudwatch_agent,awslogs_agent,na
-aws_log_parser_php,na,na
-erambaawsemailuser,na,na
-esteban.ribicic,infrastructure_write_only|infrastructure_read_only|full_iam_access,na
-listmonker,na,na
-pmm,full_iam_access,na
-samuel.kubas,infrastructure_write_only|infrastructure_read_only,na

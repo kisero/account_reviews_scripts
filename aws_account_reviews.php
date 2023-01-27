@@ -1,7 +1,7 @@
 <?php
 
 require 'vendor/autoload.php';
-require 'credentials.php';
+require 'config.php';
 
 use Aws\Iam\IamClient;
 use GuzzleHttp\Client;
