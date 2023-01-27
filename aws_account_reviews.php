@@ -90,11 +90,8 @@ $response = $client->request('POST', "$eramba_hostname/api/account-reviews/accou
 $code = $response->getStatusCode(); // 200
 $reason = $response->getReasonPhrase(); // OK
 $body = $response->getBody();
-echo $body;
-
-
 echo "$code / $reason\n";
 
-# unlink($tmp_csv_file_name);
+unlink($tmp_csv_file_name);
 
 ?>
